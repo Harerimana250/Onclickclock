@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Simple Application</title>
+    </head>
+    <body>
+        <center>
+            
+                <fieldset>
+                    <legend style="left: 50;"> DESPLAY DATE AND TIME JS FIRST APPLICATION</legend>
+                    <h1>SIMPLE APPLICATION</h1>
+                    
+            
+                
+        
+    
+    <script>
+        var day= new Date();
+        var date =(day.getMonth()+1)+'-'+day.getDate()+'-'+ day.getFullYear();
+        var time = day.getHours()+ ":" +day.getMinutes()+ ":" +day.getSeconds();
+        var dateTime = date+' '+time; 
+       
+    </script>
+ <button type="button" onclick=" document.getElementById('passdata').innerHTML=dateTime;">SHOW DATE</button>
+ <p id="passdata"></p>
+</fieldset>
+</center>
+    </body>
+    
+</html>

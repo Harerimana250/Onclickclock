@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Simple Application</title>
+</head>
+<body>
+    <center>
+        <fieldset>
+           
+            <h1>SIMPLE APPLICATION</h1>
+            <a href="#" onclick="window.location='Time.html'; ">SHOW DATE</a>
+
+            <p id="passdata"></p>
+        </fieldset>
+    </center>
+</body>
+</html>
+<script type="text/javascript">
+    // Script Code
+    var day= new Date();
+    var date =(day.getMonth()+1)+'-'+day.getDate()+'-'+ day.getFullYear();
+    var time = day.getHours()+ ":" +day.getMinutes();
+    var dateTime = date+' '+time; 
+    document.getElementById('passdata').innerHTML=dateTime;
+    </script>
